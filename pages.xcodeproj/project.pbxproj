@@ -82,11 +82,11 @@
 		4300AAB72907DAD000962437 /* Streamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streamer.swift; sourceTree = "<group>"; };
 		4300AABA2907DDA000962437 /* StreamerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamerRow.swift; sourceTree = "<group>"; };
 		4300AAC12907E36000962437 /* StreamerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamerList.swift; sourceTree = "<group>"; };
-		4300AAC52907F4C600962437 /* pages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = pages.app; path = "/Users/user19/Desktop/pages/build/Debug-iphoneos/pages.app"; sourceTree = "<absolute>"; };
 		4324149828FFE3F4009477EC /* PV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PV.swift; sourceTree = "<group>"; };
 		4324149B28FFE546009477EC /* PVRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVRow.swift; sourceTree = "<group>"; };
 		4324149E28FFE8C9009477EC /* PVDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVDetail.swift; sourceTree = "<group>"; };
 		432414A128FFEC07009477EC /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		433EBCD32907FE4B00C46679 /* pages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		490DB4C028F6A3BB001243AD /* dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dice.swift; sourceTree = "<group>"; };
 		490DB4C328F6B18F001243AD /* anim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anim.swift; sourceTree = "<group>"; };
 		4966830528ED59D700707572 /* pagesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pagesApp.swift; sourceTree = "<group>"; };
@@ -111,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				4966830428ED59D700707572 /* pages */,
+				433EBCD32907FE4B00C46679 /* pages.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,7 +189,7 @@
 			);
 			name = pages;
 			productName = pages;
-			productReference = 4300AAC52907F4C600962437 /* pages.app */;
+			productReference = 433EBCD32907FE4B00C46679 /* pages.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

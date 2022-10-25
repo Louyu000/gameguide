@@ -63,6 +63,7 @@ struct MainPage: View {
                                 Image("title4")
                             })
                             
+                            
                         }
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 300, maxHeight: 300)
                         .padding(5)
@@ -88,6 +89,8 @@ struct MainPage: View {
                                 .scaledToFill()
                                 .ignoresSafeArea()
                 )
+                .navigationTitle("暗影詩章")
+                .navigationBarHidden(true)
             }
             .tabItem { Label("主頁", systemImage: "house.fill") }
             
@@ -114,65 +117,65 @@ struct MainPage: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: UIScreen.main.bounds.width+80)
-                        .opacity(opacity)
-                        .animation(.easeIn(duration: 1), value: opacity)
+                        .transition(.opacity)
+                        .animation(.easeIn(duration: 10), value: opacity)
                     
                 case "皇家護衛":
                     Image("皇家護衛1")
                         .resizable()
                         .scaledToFit()
                         .frame(width: UIScreen.main.bounds.width+80)
-                        .opacity(opacity)
-                        .animation(.easeIn(duration: 1), value: opacity)
+                        .transition(.opacity)
+                        .animation(.easeIn(duration: 10), value: opacity)
                 case "巫師":
                     Image("巫師1")
                         .resizable()
                         .scaledToFit()
                         .frame(width: UIScreen.main.bounds.width+80)
-                        .opacity(opacity)
-                        .animation(.easeIn(duration: 1), value: opacity)
+                        .transition(.opacity)
+                        .animation(.easeIn(duration: 10), value: opacity)
                 case "龍族":
                     Image("龍族1")
                         .resizable()
                         .scaledToFit()
                         .frame(width: UIScreen.main.bounds.width+80)
-                        .opacity(opacity)
-                        .animation(.easeIn(duration: 1), value: opacity)
+                        .transition(.opacity)
+                        .animation(.easeIn(duration: 10), value: opacity)
                 case "死靈法師":
                     Image("死靈法師1")
                         .resizable()
                         .scaledToFit()
                         .frame(width: UIScreen.main.bounds.width+80)
-                        .opacity(opacity)
-                        .animation(.easeIn(duration: 1), value: opacity)
+                        .transition(.opacity)
+                        .animation(.easeIn(duration: 10), value: opacity)
                 case "吸血鬼":
                     Image("吸血鬼1")
                         .resizable()
                         .scaledToFit()
                         .frame(width: UIScreen.main.bounds.width+80)
-                        .opacity(opacity)
-                        .animation(.easeIn(duration: 1), value: opacity)
+                        .transition(.opacity)
+                        .animation(.easeIn(duration: 10), value: opacity)
                 case "主教":
                     Image("主教1")
                         .resizable()
                         .scaledToFit()
                         .frame(width: UIScreen.main.bounds.width+80)
-                        .opacity(opacity)
-                        .animation(.easeIn(duration: 1), value: opacity)
+                        .transition(.opacity)
+                        .animation(.easeIn(duration: 10), value: opacity)
                 case "復仇者":
                     Image("復仇者1")
                         .resizable()
                         .scaledToFit()
                         .frame(width: UIScreen.main.bounds.width+80)
-                        .opacity(opacity)
-                        .animation(.easeIn(duration: 1), value: opacity)
+                        .transition(.opacity)
+                        .animation(.easeIn(duration: 10), value: opacity)
                 default:
                     Image("精靈1")
                         .resizable()
                         .scaledToFit()
                         .frame(width: UIScreen.main.bounds.width+80)
-                        .opacity(opacity)
-                        .animation(.easeIn(duration: 1), value: opacity)
+                        .transition(.opacity)
+                        .animation(.easeIn(duration: 10), value: opacity)
                 }
             }.background(Image("bg2")
                             .resizable()
@@ -228,7 +231,7 @@ struct MainPage: View {
             )
             .tabItem { Label("遊戲介紹", systemImage: "book.fill")}
             StreamerList()
-            .tabItem { Label("實況主", systemImage: "camera.circle.fill")}
+                .tabItem { Label("實況主", systemImage: "camera.circle.fill")}
         }
     }
 }
