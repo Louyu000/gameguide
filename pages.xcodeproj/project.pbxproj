@@ -48,6 +48,12 @@
 		4966830828ED59D700707572 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4966830728ED59D700707572 /* ContentView.swift */; };
 		4966830A28ED59E000707572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4966830928ED59E000707572 /* Assets.xcassets */; };
 		4966830D28ED59E000707572 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4966830C28ED59E000707572 /* Preview Assets.xcassets */; };
+		B5575A79295A97CA00A93820 /* Youtube.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5575A78295A97CA00A93820 /* Youtube.swift */; };
+		B5575A7B295A983A00A93820 /* YoutubeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5575A7A295A983A00A93820 /* YoutubeRow.swift */; };
+		B5575A7D295AA4FF00A93820 /* YoutubeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5575A7C295AA4FF00A93820 /* YoutubeList.swift */; };
+		B5575B2C295AE6B300A93820 /* ItunesDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5575B2B295AE6B200A93820 /* ItunesDataFetcher.swift */; };
+		B5575B2E295AE6D800A93820 /* ItunesDataSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5575B2D295AE6D800A93820 /* ItunesDataSaver.swift */; };
+		B5575B32295AEA9900A93820 /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5575B31295AEA9900A93820 /* ItemList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +100,12 @@
 		4966830928ED59E000707572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4966830C28ED59E000707572 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4966830E28ED59E000707572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5575A78295A97CA00A93820 /* Youtube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Youtube.swift; sourceTree = "<group>"; };
+		B5575A7A295A983A00A93820 /* YoutubeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeRow.swift; sourceTree = "<group>"; };
+		B5575A7C295AA4FF00A93820 /* YoutubeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeList.swift; sourceTree = "<group>"; };
+		B5575B2B295AE6B200A93820 /* ItunesDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItunesDataFetcher.swift; path = "../../../../Desktop/ItunesApiCompletionHandler-main-2-3/ItunesApiCompletionHandler/ItunesDataFetcher.swift"; sourceTree = "<group>"; };
+		B5575B2D295AE6D800A93820 /* ItunesDataSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItunesDataSaver.swift; path = "../../../../Desktop/ItunesApiCompletionHandler-main-2-3/ItunesApiCompletionHandler/ItunesDataSaver.swift"; sourceTree = "<group>"; };
+		B5575B31295AEA9900A93820 /* ItemList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,10 +160,16 @@
 				4300AA6F29077DB400962437 /* pv26.mp4 */,
 				4966830528ED59D700707572 /* pagesApp.swift */,
 				432414A128FFEC07009477EC /* MainPage.swift */,
+				B5575A78295A97CA00A93820 /* Youtube.swift */,
+				B5575A7A295A983A00A93820 /* YoutubeRow.swift */,
+				B5575A7C295AA4FF00A93820 /* YoutubeList.swift */,
 				4324149E28FFE8C9009477EC /* PVDetail.swift */,
 				4324149828FFE3F4009477EC /* PV.swift */,
 				4300AAB72907DAD000962437 /* Streamer.swift */,
+				B5575B31295AEA9900A93820 /* ItemList.swift */,
 				4300AABA2907DDA000962437 /* StreamerRow.swift */,
+				B5575B2D295AE6D800A93820 /* ItunesDataSaver.swift */,
+				B5575B2B295AE6B200A93820 /* ItunesDataFetcher.swift */,
 				4300AAC12907E36000962437 /* StreamerList.swift */,
 				4324149B28FFE546009477EC /* PVRow.swift */,
 				4966830728ED59D700707572 /* ContentView.swift */,
@@ -271,13 +289,19 @@
 			files = (
 				4324149C28FFE546009477EC /* PVRow.swift in Sources */,
 				4324149928FFE3F5009477EC /* PV.swift in Sources */,
+				B5575B32295AEA9900A93820 /* ItemList.swift in Sources */,
+				B5575B2C295AE6B300A93820 /* ItunesDataFetcher.swift in Sources */,
+				B5575B2E295AE6D800A93820 /* ItunesDataSaver.swift in Sources */,
 				490DB4C428F6B18F001243AD /* anim.swift in Sources */,
 				4324149F28FFE8C9009477EC /* PVDetail.swift in Sources */,
 				4966830828ED59D700707572 /* ContentView.swift in Sources */,
 				4300AABB2907DDA000962437 /* StreamerRow.swift in Sources */,
+				B5575A7B295A983A00A93820 /* YoutubeRow.swift in Sources */,
 				4300AAB82907DAD000962437 /* Streamer.swift in Sources */,
+				B5575A79295A97CA00A93820 /* Youtube.swift in Sources */,
 				4300AAC22907E36000962437 /* StreamerList.swift in Sources */,
 				490DB4C128F6A3BB001243AD /* dice.swift in Sources */,
+				B5575A7D295AA4FF00A93820 /* YoutubeList.swift in Sources */,
 				4966830628ED59D700707572 /* pagesApp.swift in Sources */,
 				432414A228FFEC07009477EC /* MainPage.swift in Sources */,
 			);

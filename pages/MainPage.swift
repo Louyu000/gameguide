@@ -8,6 +8,8 @@
 import SwiftUI
 import AVKit
 struct MainPage: View {
+    @EnvironmentObject var fetcher: ItunesDataFetcher
+    @EnvironmentObject var saver: ItunesDataSaver
     let PVs=[
         PV(Version: 2, VersionName: "Darkness Evolved\n暗影進化",  VideoLink: "pv2", Description: "Darkness Evolve是一款以Shadowverse遊戲系統最大特色“進化”為特色的卡牌包，新增109張新卡牌。\n將出現許多不僅僅是為了增強自己，而是具有新用途的進化卡片。"),
         PV(Version: 3, VersionName: "Rise of Bahamut\n巴哈姆特降臨",  VideoLink: "pv3", Description: "Rise of Bahamut / 巴哈姆特降臨 是 Shadowverse 的第三個卡片包，增加了 105 張新卡片。\n具有新能力“增強”的卡可以有兩種使用方式，為您的策略增加更多深度。\n\n名義上的巴哈姆特是有史以來最強大的傳奇。 現在是掌握這種力量的時候了！\n“摧毀一切，贏得勝利”"),
@@ -232,6 +234,10 @@ struct MainPage: View {
             .tabItem { Label("遊戲介紹", systemImage: "book.fill")}
             StreamerList()
                 .tabItem { Label("實況主", systemImage: "camera.circle.fill")}
+            ItemList()
+                .tabItem { Label("即時YT資訊", systemImage: "person.fill") }
+            YoutubeList()
+                .tabItem { Label("收藏", systemImage: "person.fill") }
         }
     }
 }
@@ -239,5 +245,7 @@ struct MainPage: View {
 struct MainPage_Previews: PreviewProvider {
     static var previews: some View {
         MainPage()
+            .environmentObject(ItunesDataFetcher())
+            .environmentObject(ItunesDataSaver())
     }
 }
