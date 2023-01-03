@@ -12,21 +12,15 @@ struct YoutubeRow: View {
     @EnvironmentObject var saver: ItunesDataSaver
     var item: videopack
     var showSaveIcon = true
-    
     var isSave: Bool {
         item.isSave ?? false
     }
-    
     var body: some View {
         VStack{
             Link(destination: URL(string: "https://www.youtube.com/watch?v=\(item.snippet.resourceId.videoId)")!, label: {
                 VStack{
-                    if #available(iOS 15.0, *) {
-                        AsyncImage(url:URL(string: item.snippet.thumbnails.medium.url)!)
-                            .frame(width: 320.0, height: 180.0)
-                    } else {
-                        Text("僅支援ios15以上")// Fallback on earlier versions
-                    }
+                    AsyncImage(url:URL(string: item.snippet.thumbnails.medium.url)!)
+                        .frame(width: 320.0, height: 180.0)
                     Text(item.snippet.title)
                         .font(.custom("ChenYuluoyan-Thin",size:30))
                 }.overlay(Rectangle().stroke(Color.white, lineWidth: 4))
@@ -48,8 +42,8 @@ struct YoutubeRow: View {
                         }
                     Image(systemName: "square.and.arrow.up")
                         .frame(width: 90.0).onTapGesture{sharebutton(url: "https://www.youtube.com/watch?v=\(item.snippet.resourceId.videoId)")}
-                        
-                        
+                    
+                    
                 }
             }
         }

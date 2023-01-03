@@ -7,11 +7,11 @@
 
 import SwiftUI
 import Foundation
-
+@available(iOS 15.0, *)
 struct ItemList: View {
     @EnvironmentObject var fetcher: ItunesDataFetcher
     @EnvironmentObject var saver: ItunesDataSaver
-
+    
     var items: [videopack] {
         var items = [videopack]()
         for var item in fetcher.items {
@@ -31,11 +31,7 @@ struct ItemList: View {
     var body: some View {
         List {
             ForEach(items) { item in
-                if #available(iOS 15.0, *) {
-                    YoutubeRow(item: item)
-                } else {
-                    // Fallback on earlier versions
-                }
+                YoutubeRow(item: item)
             }
         }
         .alert(isPresented: $fetcher.showError, content: {
@@ -48,7 +44,7 @@ struct ItemList: View {
         }
     }
 }
-
+@available(iOS 15.0, *)
 struct ItemList_Previews: PreviewProvider {
     static var previews: some View {
         ItemList()
